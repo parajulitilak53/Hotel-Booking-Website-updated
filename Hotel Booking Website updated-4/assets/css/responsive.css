@@ -1,0 +1,215 @@
+/* media queries */
+@media (max-width:1280px){
+    html{
+        font-size:55%;
+    }
+    .gallery .box-container .grid_gallery .v-stretch{
+        grid-row: span 1;
+    }
+
+    .gallery .box-container .grid_gallery .h-stretch{
+        grid-column: span 2;
+    }
+}
+
+@media (max-width:1024px){
+    .counter .box-container{
+        width: 85vw;
+    }
+    .counter .box-container .box{
+        height: 30vmin;
+        width: 30vmin;
+        font-size: 12px;
+    }
+    .gallery .box-container .grid_gallery .v-stretch{
+        grid-row: span 1;
+    }
+
+    .gallery .box-container .grid_gallery .h-stretch{
+        grid-column: span 2;
+    }
+}
+
+@media (max-width:991px){
+    header{
+        padding:2rem;
+    }
+    section{
+        padding:2rem;
+    }
+}
+@media(max-width:900px){
+    header{
+        padding: 10px 20px;
+    }
+
+    header .logo img{
+        width: 30%;
+        height: auto;
+    }
+
+    header nav{
+        position: absolute;
+        width: 100%;
+        top: 66px;
+        left: 0;
+        background: var(--color-4);
+        display: none;
+    }
+    header.active nav{
+        display: initial;
+    }
+
+    header nav ul li{
+        width: 100%;
+        border-top: 1px solid #333;
+    }
+    header ul li a{
+        color: #fff;
+    }
+
+    header ul .btn-book{
+        align-items: center;
+        padding: 20px 25px;  
+    }
+
+    header nav ul li ul{
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+
+    header nav ul li:hover ul li{
+        background: var(--color-3);
+    }
+
+    .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 50px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--red);
+    }
+
+    .menuToggle::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background: var(--red);
+        transform: translateY(-12px);
+        box-shadow: 0 12px var(--red);
+    }
+
+    .menuToggle::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background: var(--red);
+        transform: translateY(12px);
+    }
+
+    header.active .menuToggle::before{
+        transform: rotate(45deg);
+        box-shadow: 0 0 var(--red);
+    }
+
+    header.active .menuToggle::after{
+        transform: rotate(315deg);
+    }
+    .home .box-container .swiper-button-next{
+        margin-right: 20px;
+    }
+    .home .box-container .swiper-button-prev{
+        margin-left: 20px;
+    }
+    .home .box-container .box .slides .content h3{
+        font-size: 3.5rem;
+        color: var(--white);
+        letter-spacing: 5px;
+    }
+    .home .box-container .box .slides .content p{
+        font-size: 2rem;
+    }
+}
+@media (max-width:768px){
+    .home .box-container .swiper-button-next{
+        margin-right: 10px;
+    }
+    .home .box-container .swiper-button-prev{
+        margin-left: 10px;
+    }
+    .home .box-container .box .slides .content h3{
+        font-size: 2.5rem;
+        color: var(--white);
+        letter-spacing: 5px;
+    }
+    .home .box-container .box .slides .content p{
+        font-size: 1.5rem;
+    }
+    .counter .box-container{
+        width: 90vw;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .counter .box-container .box{
+        height: 30vmin;
+        width: calc(50% - 40px);
+        font-size: 12px;
+    }
+    .gallery .box-container .grid_gallery .v-stretch{
+        grid-row: span 1;
+    }
+
+    .gallery .box-container .grid_gallery .h-stretch{
+        grid-column: span 2;
+    }
+}
+
+@media (max-width:450px){
+    html{
+        font-size:50%;
+    }
+    .heading span{
+        font-size:2.5rem;
+    }
+    .contact-info .mail{
+        display: none;
+    }
+
+    .contact-info .contact{
+        display: none;
+    }
+    .contact-info .icon{
+        padding: 1rem;
+    }
+    .contact .row form .inputBox input{
+        width:100%;
+    }
+    .home .box-container .swiper-button-next{
+        margin-right: 5px;
+    }
+    .home .box-container .swiper-button-prev{
+        margin-left: 5px;
+    }
+
+    .counter .box-container{
+        gap: 15px;
+    }
+    .counter .box-container .box{
+        width: 100%;
+        height: 25vmin;
+        font-size: 8px;
+    }
+    .gallery .box-container .grid_gallery .v-stretch{
+        grid-row: span 1;
+    }
+
+    .gallery .box-container .grid_gallery .h-stretch{
+        grid-column: span 1;
+    }
+}
